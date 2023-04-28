@@ -20,7 +20,8 @@ player addEventHandler ["Take", { _this call ExileClient_object_player_event_onT
 player addEventHandler ["InventoryOpened", { _this call ExileClient_object_player_event_onInventoryOpened}];
 player addEventHandler ["InventoryClosed", { _this call ExileClient_object_player_event_onInventoryClosed}];
 //StopMoaning Start
-// _ExileClient_MinInjured_MoanThreshold = 80 // Character doesn't mean when injured if the health is greater than 80
+// _ExileClient_MinInjured_MoanThreshold = 80 // Character doesn't mean when injured if the health is greater than 80.
+// By Arma/Exile default the player would already moan when the health is smaller then 90%.
 player addEventHandler ["SoundPlayed", { 
   
  params ["_unit", "_soundID",["_volume","default"]]; 
